@@ -23,6 +23,12 @@ body {
     font-size: x-large;
 }
 
+.btn-primary {
+    background-color: #fff;
+    border: 1px solid #f16161;
+    color: #000000;
+}
+
 /*Radio group*/
 .e-btn-group.custom-rbt-group{
     width: 100%;

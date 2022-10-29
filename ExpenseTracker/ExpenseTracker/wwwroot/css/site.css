@@ -15,4 +15,31 @@ html {
 
 body {
   margin-bottom: 60px;
+  background-color: #fff;
+  color: #000000;
+}
+
+.e-bigger {
+    font-size: x-large;
+}
+
+/*Radio group*/
+.e-btn-group.custom-rbt-group{
+    width: 100%;
+}
+    .e-btn-group.custom-rbt-group .e-btn {
+        width: 50%;
+    }
+/*no chose*/
+.custom-rbt-group label.e-btn {
+    box-shadow: none !important;
+    background-color: #fff;
+    border: 1px solid #f16161;
+    color: #212b36;
+}
+/*chose*/
+.e-btn-group.custom-rbt-group input:checked + label.e-btn {
+    background-color: #f16161;
+    border: 1px solid #fff;
+    color: #fff;
 }

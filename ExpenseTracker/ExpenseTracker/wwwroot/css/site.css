@@ -23,9 +23,10 @@ body {
     font-size: x-large;
 }
 
-.btn-primary {
+/*Button*/
+.primarybtn {
     background-color: #fff;
-    border: 1px solid #f16161;
+    border: 1px solid #aecf04;
     color: #000000;
 }
 
@@ -36,16 +37,94 @@ body {
     .e-btn-group.custom-rbt-group .e-btn {
         width: 50%;
     }
-/*no chose*/
+/*No chose*/
 .custom-rbt-group label.e-btn {
     box-shadow: none !important;
     background-color: #fff;
-    border: 1px solid #f16161;
-    color: #212b36;
+    border: 1px solid #aecf04;
+    color: #000000;
 }
-/*chose*/
+/*Chose*/
 .e-btn-group.custom-rbt-group input:checked + label.e-btn {
-    background-color: #f16161;
+    background-color: #aecf04;
     border: 1px solid #fff;
     color: #fff;
+}
+
+/*Widget*/
+.widget {
+    border-radius: 1rem;
+    background-color: #f9fa97;
+}
+
+/*Grid*/
+.e-grid {
+    border: 0;
+    border-radius: 5px;
+}
+
+    .e-grid .e-gridcontent, .e-grid .e-table {
+        background-color: #f9fa97;
+    }
+
+    .e-grid .e-gridheader {
+        border: 5px;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        padding: 10px;
+        background-color: #aecf04;
+    }
+
+        .e-grid .e-gridheader .e-headercell {
+            background-color: #aecf04;
+        }
+
+    .e-grid .e-gridpager {
+        background-color: #f9fa97;
+    }
+
+    .e-grid .e-pagercontainer {
+        border: none;
+        background-color: #f9fa97;
+    }
+
+    .e-grid .e-content table {
+        padding: 0px 10px;
+    }
+
+.e-pagercontainer .e-icons {
+    background-color: #f9fa97;
+    border: none !important;
+}
+
+.e-pager .e-numericitem {
+    color: #adb5bd;
+    background-color: #f9fa97;
+    padding: 15px !important;
+}
+
+    .e-pager .e-numericitem:not(.e-currentitem) {
+        border: none !important;
+    }
+
+    .e-pager .e-numericitem:hover {
+        color: #fff;
+    }
+
+    .e-pager .e-numericitem.e-currentitem {
+        color: #fff;
+        border: none !important;
+        background-color: #31373d;
+    }
+
+.e-pager div.e-icons:not(.e-disable) {
+    color: #fff;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.e-grid .e-pager {
+    padding: 10px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
 }

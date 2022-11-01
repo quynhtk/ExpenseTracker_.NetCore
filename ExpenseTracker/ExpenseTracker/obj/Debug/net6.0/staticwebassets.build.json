@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "2qtv6+80Vd8BahgPEKbltI4ZeKCfwE5AK9wpVncqSas=",
+  "Hash": "YqEw/fd9GKNMjhr0n6zbaSo9GsVcR4p0lTTT/QKSXmc=",
   "Source": "ExpenseTracker",
   "BasePath": "_content/ExpenseTracker",
   "Mode": "Default",
@@ -83,6 +83,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\DELL\\OneDrive\\Máy tính\\ExpenseTracker_.NetCore\\ExpenseTracker\\ExpenseTracker\\wwwroot\\favicon-16x16.png",
+      "SourceId": "ExpenseTracker",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\DELL\\OneDrive\\Máy tính\\ExpenseTracker_.NetCore\\ExpenseTracker\\ExpenseTracker\\wwwroot\\",
+      "BasePath": "_content/ExpenseTracker",
+      "RelativePath": "favicon-16x16.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\favicon-16x16.png"
+    },
+    {
+      "Identity": "C:\\Users\\DELL\\OneDrive\\Máy tính\\ExpenseTracker_.NetCore\\ExpenseTracker\\ExpenseTracker\\wwwroot\\favicon-32x32.png",
+      "SourceId": "ExpenseTracker",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\DELL\\OneDrive\\Máy tính\\ExpenseTracker_.NetCore\\ExpenseTracker\\ExpenseTracker\\wwwroot\\",
+      "BasePath": "_content/ExpenseTracker",
+      "RelativePath": "favicon-32x32.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\favicon-32x32.png"
     },
     {
       "Identity": "C:\\Users\\DELL\\OneDrive\\Máy tính\\ExpenseTracker_.NetCore\\ExpenseTracker\\ExpenseTracker\\wwwroot\\js\\site.js",

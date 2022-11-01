@@ -21,25 +21,9 @@ namespace ExpenseTracker.Controllers
         // GET: Category
         public async Task<IActionResult> Index()
         {
-              return View(await _context.Categories.ToListAsync());
-        }
-
-        // GET: Category/Details/5
-        public async Task<IActionResult> Details(int? id)
-        {
-            if (id == null || _context.Categories == null)
-            {
-                return NotFound();
-            }
-
-            var category = await _context.Categories
-                .FirstOrDefaultAsync(m => m.CategoryID == id);
-            if (category == null)
-            {
-                return NotFound();
-            }
-
-            return View(category);
+            return _context.Categories != null ?
+              View(await _context.Categories.ToListAsync()) :
+              Problem("Entity set 'ApplicationDbContext.Categories' is null.");
         }
 
         // GET: Category/CreateOrEdit
@@ -72,6 +56,26 @@ namespace ExpenseTracker.Controllers
                 return RedirectToAction(nameof(Index));
             }
             return View(category);
+        }
+
+
+        // POST: Category/Delete/5
+        [HttpPost, ActionName("Delete")]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> DeleteConfirmed(int id)
+        {
+            if (_context.Categories == null)
+            {
+                return Problem("Entity set 'ApplicationDbContext.Categories'  is null.");
+            }
+            var category = await _context.Categories.FindAsync(id);
+            if (category != null)
+            {
+                _context.Categories.Remove(category);
+            }
+
+            await _context.SaveChangesAsync();
+            return RedirectToAction(nameof(Index));
         }
 
         /*        // GET: Category/Edit/5
@@ -127,7 +131,7 @@ namespace ExpenseTracker.Controllers
         
         */
 
-        // GET: Category/Delete/5
+        /*// GET: Category/Delete/5
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null || _context.Categories == null)
@@ -145,28 +149,27 @@ namespace ExpenseTracker.Controllers
             return View(category);
         }
 
-        // POST: Category/Delete/5
-        [HttpPost, ActionName("Delete")]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> DeleteConfirmed(int id)
-        {
-            if (_context.Categories == null)
-            {
-                return Problem("Entity set 'ApplicationDbContext.Categories'  is null.");
-            }
-            var category = await _context.Categories.FindAsync(id);
-            if (category != null)
-            {
-                _context.Categories.Remove(category);
-            }
-            
-            await _context.SaveChangesAsync();
-            return RedirectToAction(nameof(Index));
-        }
-
         private bool CategoryExists(int id)
         {
           return _context.Categories.Any(e => e.CategoryID == id);
-        }
+        }*/
+
+        /*// GET: Category/Details/5
+        public async Task<IActionResult> Details(int? id)
+        {
+            if (id == null || _context.Categories == null)
+            {
+                return NotFound();
+            }
+
+            var category = await _context.Categories
+                .FirstOrDefaultAsync(m => m.CategoryID == id);
+            if (category == null)
+            {
+                return NotFound();
+            }
+
+            return View(category);
+        }*/
     }
 }

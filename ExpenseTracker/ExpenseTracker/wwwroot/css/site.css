@@ -11,6 +11,11 @@ html {
 html {
   position: relative;
   min-height: 100%;
+  font-family: "Inter";
+}
+
+*:not(.fa-solid):not(.fa):not(.e-icons) {
+    font-family: "Inter"
 }
 
 body {
@@ -28,6 +33,17 @@ body {
     background-color: #fff;
     border: 1px solid #aecf04;
     color: #000000;
+}
+
+.btn:focus, .btn:active {
+    outline: none !important;
+    box-shadow: none;
+}
+
+/*Hyperlink*/
+.no-a-decoration, .no-a-decoration:hover {
+    text-decoration: none;
+    color: inherit;
 }
 
 /*Radio group*/
@@ -114,7 +130,7 @@ body {
     .e-pager .e-numericitem.e-currentitem {
         color: #fff;
         border: none !important;
-        background-color: #31373d;
+        background-color: #aecf04;
     }
 
 .e-pager div.e-icons:not(.e-disable) {
@@ -128,3 +144,11 @@ body {
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
 }
+
+/*.e-grid td.e-active {
+    background-color: #aecf04
+}
+
+.e-grid .e-rowcell {
+    background-color: #aecf04
+}*/

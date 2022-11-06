@@ -145,10 +145,8 @@ body {
     border-bottom-right-radius: 5px;
 }
 
-/*.e-grid td.e-active {
-    background-color: #aecf04
+/*BreadCrumb*/
+.e-breadcrumb a, .e-breadcrumb a:hover{
+    text-decoration: none !important;
+    color: inherit !important;
 }
-
-.e-grid .e-rowcell {
-    background-color: #aecf04
-}*/
